@@ -28,6 +28,7 @@ public class Calificacion{
     public void establecerProfesor(Profesor n) {
         profesor = n;
     }
+    
 
     public double obtenerNota() {
         return nota;

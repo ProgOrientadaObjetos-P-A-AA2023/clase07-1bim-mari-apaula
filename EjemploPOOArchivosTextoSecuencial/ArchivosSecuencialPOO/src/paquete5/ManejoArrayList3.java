@@ -31,17 +31,27 @@ public class ManejoArrayList3 {
         
         // ArrayList
         ArrayList <Calificacion> calificaciones = new ArrayList<>();
+        /* diferancia entre ARRAYlist y arreglos
+        ARRAYLIST = permite ingresar valores segun tu aumentes
+        
+        ARREGLOS = TU pones el tamaño del arreglo
+        (el tamaño del arreglo mo es cambiable) 
+        
+        */
         calificaciones.add(c1);
         calificaciones.add(c2);
         calificaciones.add(c3);
         
+        double promedio = 0;
+        
         for (int i = 0; i < calificaciones.size(); i++) {
-            System.out.printf("%s - %s - %.2f\n", 
+            System.out.printf("%s - %s - %.2f\n\n", 
                     calificaciones.get(i).obtenerProfesor().obtenerNombre(), 
                     calificaciones.get(i).obtenerNombreMateria(),
                     calificaciones.get(i).obtenerNota());
+            promedio = promedio + calificaciones.get(i).obtenerNota();
         }
-        
-        
+        promedio = promedio / calificaciones.size();
+        System.out.printf("\nEl promedio de las calificacioens es: %.2f\n", promedio);
     }
 }

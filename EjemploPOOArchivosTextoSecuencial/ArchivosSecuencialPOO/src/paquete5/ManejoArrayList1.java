@@ -23,6 +23,7 @@ public class ManejoArrayList1 {
         profesores[1] = prof2;
         
         for (int i = 0; i < profesores.length; i++) {
+            Profesor p1 = profesores[i];
             System.out.printf("%s - %s\n", profesores[i].obtenerNombre(),
                     profesores[i].obtenerTipo());
         }
@@ -35,9 +36,20 @@ public class ManejoArrayList1 {
         profesores2.add(prof2);
         
         for (int i = 0; i < profesores2.size(); i++) {
+            Profesor p1 = profesores2.get(i);
             System.out.printf("%s - %s\n", profesores2.get(i).obtenerNombre(),
                     profesores2.get(i).obtenerTipo());
         }
+        // metodos para array list
+        // .add = agregar nuevos objetos alo arraylist
+        // .get = obtner elemento en una posicion deceada en el arraylist
+        // .size = Nos devuelve un entero con el tamaño de la lista. (tamaño de lista)
+        
+        /*
+        no se utiliza el .lengt porque es para arreglos, encamcio en en array list 
+        se usa .size
+        */
+        
         
         System.out.println("-----------------------------");
         
